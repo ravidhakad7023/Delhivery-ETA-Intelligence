@@ -14,7 +14,7 @@ The analysis is based on historical delivery data located in `data/raw/delivery_
 - **Size:** 144,867 records expanded to 31 features during processing.
 - **Target Variable:** `delay_ratio` (predicted by the baseline ML models) and node `betweenness` (predicted by the GNN prototype).
 - **Key Fields:** Source and destination center IDs, route types (Carting, FTL), actual time taken, OSRM distances, and SLA breach indicators.
-- **Network Scope:** The dataset encompasses 1,500 unique centers (nodes) and 2,767 unique corridors (edges).
+- **Network Scope:** The dataset encompasses 1,500 unique centers (nodes) and 2767 unique corridors (edges).
 
 ## 4. Analytical Workflow
 The project implements an end-to-end pipeline (`run_pipeline.py`) structured as follows:
