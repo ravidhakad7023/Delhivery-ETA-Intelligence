@@ -1,0 +1,44 @@
+
+NETWORK OPERATIONS STRATEGY MEMO
+================================
+
+TOP BOTTLENECK HUBS
+-------------------
+
+ node  in_degree  out_degree  betweenness  pagerank  bottleneck_score  estimated_delay_cost
+  8.0          1          49     0.080935  0.000274         14.732456         147324.564618
+916.0          4          35     0.075635  0.001053         10.530570         105305.698782
+134.0          1          29     0.045651  0.000337          8.718361          87183.613424
+603.0          1          29     0.000420  0.000111          8.700201          87002.011712
+748.0          1          27     0.069765  0.000414          8.128030          81280.300214
+
+TOP RISK CORRIDORS
+------------------
+
+ source_center  destination_center  mean_delay_ratio  delay_variance  avg_distance  avg_actual_time  sla_breach_rate  trip_count  corridor_risk  estimated_revenue_risk
+           927                 919          4.804167       23.176701     27.143200            116.0              1.0           2       9.174677                  1000.0
+           972                 963          4.979167       17.750868     23.839300            112.5              1.0           2       7.616927                  1000.0
+          1479                1437          6.733670       14.155116     71.453360            417.0              1.0          10       7.240003                  5000.0
+           848                 840          4.682112       16.469347     31.019850            124.0              1.0           2       7.113649                  1000.0
+           845                 843          5.722483       14.034274     32.624675            155.0              1.0           4       6.799275                  2000.0
+
+KEY RECOMMENDATIONS
+-------------------
+
+1. Upgrade processing capacity at top bottleneck hubs
+
+2. Shift high-risk corridors toward FTL routing
+
+3. Add redundancy around high-centrality hubs
+
+4. Prioritize SLA-sensitive corridors during peak hours
+
+5. Monitor corridors with chronic delay propagation
+
+EXPECTED IMPACT
+---------------
+
+- Reduced SLA breach rates
+- Improved ETA accuracy
+- Lower operational delay costs
+- Better corridor-level planning
